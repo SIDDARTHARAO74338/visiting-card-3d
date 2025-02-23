@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Business Card</title>
+    <script type="module" src="main.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+        input, button { margin: 10px; padding: 10px; }
+        canvas { display: block; margin: auto; background: white; }
+        .container { display: flex; justify-content: center; flex-direction: column; align-items: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Customize Your 3D Business Card</h2>
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="contact" placeholder="Enter Contact">
+        <input type="color" id="color" value="#007bff">
+        <!--<input type="file" id="logoUpload" accept="image/*">-->
+        <button id="generateCard">Generate 3D Card</button>
+    </div>
+    <canvas id="threeCanvas"></canvas>
+
+</body>
+</html>
